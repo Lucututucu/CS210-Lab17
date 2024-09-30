@@ -13,9 +13,9 @@
 
 int main(void) {
    // The average of this array is 4.067 and the standard deviation is 1.849
-   double values[] = { 1.5, 6.6, 2.3, 6.5, 2.2 };
+   double values[] = { 5.0, 3.1, 7.2, 3.8, 4.2, 1.1 };
 
-   int numVals = 5;
+   int numVals = 6;
    
    int numWithinStandDev = analyzeValues(values, numVals);
 

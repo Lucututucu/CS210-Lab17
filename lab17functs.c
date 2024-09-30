@@ -72,8 +72,6 @@ int analyzeValues(double array[], int numVals) {
     i = 0;
     standDev = pow(addedSquares/numVals, 0.5);
 
-    printf("%lf", standDev);
-
     for (i = 0; i < numVals; ++i) {
         if ((average - standDev) < array[i] && (average + standDev) > array[i]) {
             numWithinStandDev++;
