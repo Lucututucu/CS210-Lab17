@@ -80,3 +80,34 @@ int analyzeValues(double array[], int numVals) {
 
     return numWithinStandDev;
 }
+
+int performOperation(char myChar, int num1, int num2) {
+    switch (myChar) {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num1 / num2;
+    }
+    return -1;
+}
+
+void getMinMax(int array[], int numVals, int* min, int* max) {
+    int minStuff = array[0];
+    int maxStuff = array[0];
+    int i;
+
+    for (i = 1; i < numVals; ++i) {
+        if (array[i] < minStuff) {
+            minStuff = array[i];
+        } else if (array[i] > maxStuff) {
+            maxStuff = array[i];
+        }
+    }
+
+    *min = minStuff;
+    *max = maxStuff;
+}

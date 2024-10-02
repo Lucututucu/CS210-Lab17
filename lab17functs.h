@@ -40,4 +40,23 @@ int countVowels(char myString[]);
  */ 
 int analyzeValues(double array[], int numVals);
 
+/** 
+ * @brief  Performs the operation requested by the user (+, -, *, /) on the numbers provided, and returns the calculated value
+ * @param myChar A character representing the operation you wish to perform
+ * @param num1 An integer
+ * @param num2 An integer
+ * @return Calculated result of operation on both integers
+ */ 
+int performOperation(char myChar, int num1, int num2);
+
+/** 
+ * @brief calculates the minimum and maximum values in the array, and stores them at the address location specified by two integer pointers
+ * @param array An integer array
+ * @param numVals An integer, representing the size of the array
+ * @param min An integer pointer representing the Minimum
+ * @param max An integer pointer representing the Maximum
+ * @return Nothing
+ */ 
+void getMinMax(int array[], int numVals, int* min, int* max);
+
 #endif

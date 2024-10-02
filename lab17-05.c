@@ -7,9 +7,23 @@
 * ===========================================================
 */
 
-int main(void)
-{
+#include <stdio.h>
+#include "lab17functs.h"
+
+int main(void) {
+   char myChar;
+   int num1;
+   int num2;
+   int result;
+
+   printf("Enter an operator (+, -, *, /):\n");
+   scanf(" %c", &myChar);
+   printf("Please enter two integer values separated by a space:\n");
+   scanf(" %d %d", &num1, &num2);
+
+   result = performOperation(myChar, num1, num2);
+
+   printf("Operation = %d\n", result);
 
    return 0;
-
 }
